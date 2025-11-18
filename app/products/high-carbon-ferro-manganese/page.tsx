@@ -14,8 +14,8 @@ export default function HighCarbonFerroManganesePage() {
       Si: "1.5% - 2% Max",
       C: "6% - 8% Max",
       S: "0.05% Max",
-      P: "0.20% - 0.40%",
-      Size: "10–150 mm / as per requirement",
+      P: "0.2% - 0.40%",
+      Size: "10-150 mm/or as per customer choice",
     },
     {
       grade: "II",
@@ -23,8 +23,8 @@ export default function HighCarbonFerroManganesePage() {
       Si: "1.5% - 2% Max",
       C: "6% - 8% Max",
       S: "0.05% Max",
-      P: "0.20% - 0.40%",
-      Size: "10–150 mm / as per requirement",
+      P: "0.2% - 0.40%",
+      Size: "10-150 mm/or as per customer choice",
     },
     {
       grade: "III",
@@ -32,8 +32,8 @@ export default function HighCarbonFerroManganesePage() {
       Si: "1.5% - 2% Max",
       C: "6% - 8% Max",
       S: "0.05% Max",
-      P: "0.20% - 0.40%",
-      Size: "10–150 mm / as per requirement",
+      P: "0.2% - 0.40%",
+      Size: "10-150 mm/or as per customer choice",
     },
     {
       grade: "IV",
@@ -41,8 +41,8 @@ export default function HighCarbonFerroManganesePage() {
       Si: "1.5% - 2% Max",
       C: "6% - 8% Max",
       S: "0.05% Max",
-      P: "0.20% - 0.40%",
-      Size: "10–150 mm / as per requirement",
+      P: "0.2% - 0.40%",
+      Size: "10-150 mm/or as per customer choice",
     },
   ];
 
@@ -165,11 +165,10 @@ export default function HighCarbonFerroManganesePage() {
                 {specs.map((row, i) => (
                   <tr
                     key={i}
-                    className={`border-b border-gray-300 dark:border-neutral-700 ${
-                      i % 2 === 0
+                    className={`border-b border-gray-300 dark:border-neutral-700 ${i % 2 === 0
                         ? "bg-gray-50 dark:bg-neutral-900"
                         : "bg-white dark:bg-neutral-800"
-                    }`}
+                      }`}
                   >
                     <td className="p-4 font-semibold">{row.grade}</td>
                     <td className="p-4">{row.Mn}</td>
