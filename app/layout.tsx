@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar.tsx";
+import Footer from "../components/Footer.tsx";
 import ThemeProvider from "../components/ThemeProvider.tsx";
 export const metadata = {
   title: "SHYAM FERRO ALLOYS LTD",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ThemeProvider>
           <Navbar />
           <main className="pt-24">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

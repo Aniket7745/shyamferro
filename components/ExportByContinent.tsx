@@ -70,9 +70,7 @@ export default function ExportByContinent() {
     ],
   };
 
-  // 🌍 COUNTRY FLAG MAP
   const countryFlags: Record<string, string> = {
-    // North America
     Seattle: "🇺🇸",
     "Vancouver BC": "🇨🇦",
     Tacoma: "🇺🇸",
@@ -92,11 +90,9 @@ export default function ExportByContinent() {
     Cristobal: "🇵🇦",
     Kingston: "🇯🇲",
 
-    // South America
     Santos: "🇧🇷",
     "Buenos Aires": "🇦🇷",
 
-    // Europe
     Hamburg: "🇩🇪",
     Bremen: "🇩🇪",
     Rotterdam: "🇳🇱",
@@ -105,7 +101,6 @@ export default function ExportByContinent() {
     Barcelona: "🇪🇸",
     Valencia: "🇪🇸",
 
-    // Middle East
     Alexandria: "🇪🇬",
     Jeddah: "🇸🇦",
     "Port Said": "🇪🇬",
@@ -113,10 +108,8 @@ export default function ExportByContinent() {
     Salalah: "🇴🇲",
     Karachi: "🇵🇰",
 
-    // Africa
     Durban: "🇿🇦",
 
-    // Asia
     Tianjin: "🇨🇳",
     Dalian: "🇨🇳",
     Qingdao: "🇨🇳",
@@ -140,7 +133,7 @@ export default function ExportByContinent() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 md:px-6 py-12 relative z-10">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-orange-400 mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-orange-500 mb-8">
         Global Export Presence
       </h2>
 
@@ -151,23 +144,29 @@ export default function ExportByContinent() {
           return (
             <div
               key={continent}
-              className="bg-[#0d0d0d] border border-orange-500/30 rounded-xl shadow-lg hover:border-orange-400/60 transition"
+              className="
+                bg-white dark:bg-neutral-900
+                border border-neutral-200 dark:border-neutral-800
+                hover:border-orange-500/60 dark:hover:border-orange-400/60
+                rounded-xl shadow-md
+                transition-colors
+              "
             >
               {/* Header */}
               <button
                 onClick={() => setOpen(isOpen ? null : continent)}
                 className="w-full px-5 py-4 flex justify-between items-center text-left"
               >
-                <span className="text-xl text-gray-200 font-semibold flex items-center gap-3">
-                  {/* 🔸 DOT FOR CONTINENT */}
-                  <span className="w-3 h-3 rounded-full bg-orange-500 shadow-[0_0_10px_#ff7a18]" />
+                <span className="text-xl text-neutral-700 dark:text-neutral-200 font-semibold flex items-center gap-3">
+                  {/* orange dot */}
+                  <span className="w-3 h-3 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(255,122,24,0.8)]" />
                   {continent}
                 </span>
 
                 {isOpen ? (
-                  <ChevronUp className="text-orange-400" />
+                  <ChevronUp className="text-orange-500" />
                 ) : (
-                  <ChevronDown className="text-orange-400" />
+                  <ChevronDown className="text-orange-500" />
                 )}
               </button>
 
@@ -177,14 +176,18 @@ export default function ExportByContinent() {
                   {places.map((place) => (
                     <div
                       key={place}
-                      className="flex items-center gap-3 px-4 py-2 rounded-lg 
-                      bg-black/40 border border-orange-500/20 
-                      hover:border-orange-400/60 transition"
+                      className="
+                        flex items-center gap-3 px-4 py-2 rounded-lg
+                        bg-neutral-50 dark:bg-neutral-800
+                        border border-neutral-200 dark:border-neutral-700
+                        hover:border-orange-500/60
+                        transition-colors
+                      "
                     >
-                      {/* 🇨🇳 COUNTRY FLAG */}
                       <span className="text-xl">{countryFlags[place]}</span>
-
-                      <span className="text-gray-300">{place}</span>
+                      <span className="text-neutral-700 dark:text-neutral-300">
+                        {place}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -194,6 +197,7 @@ export default function ExportByContinent() {
         })}
       </div>
 
+      {/* fade animation */}
       <style>
         {`
           .animate-fadeIn {
@@ -201,7 +205,7 @@ export default function ExportByContinent() {
           }
           @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-6px); }
-            to { opacity: 1; transform: translateY(0); }
+            to   { opacity: 1; transform: translateY(0); }
           }
         `}
       </style>
