@@ -6,32 +6,33 @@ const products = [
   {
     title: "High Carbon Ferro Manganese",
     desc: "High carbon ferro manganese for steel & casting applications.",
-    img: "/products/hc-ferro-manganese.jpg",
+    img: "/products/HighCarbonFerroManganese.png",
+
   },
   {
     title: "High Carbon Silico Manganese",
     desc: "High carbon silico manganese used as a deoxidizing agent.",
-    img: "/products/hc-silico-manganese.jpg",
+    img: "/products/HighCarbonSilicoManganese.jpg",
   },
   {
     title: "Medium Carbon Silico Manganese",
     desc: "Medium carbon silico manganese for precise chemistry control.",
-    img: "/products/mc-silico-manganese.jpg",
+    img: "/products/MediumCarbonSilicoManganese.png",
   },
   {
     title: "High Carbon Ferro Chrome",
     desc: "High carbon ferro chrome for stainless steel & alloys.",
-    img: "/products/hc-ferro-chrome.jpg",
+    img: "/products/HighCarbonFerroChrome.jpg",
   },
   {
     title: "Low Carbon Silico Manganese",
     desc: "Low carbon silico manganese for superior alloy performance.",
-    img: "/products/lc-silico-manganese.jpg",
+    img: "/products/LowCarbonSilicoManganese.jpg",
   },
   {
     title: "Medium Carbon Ferro Manganese",
     desc: "Medium carbon ferro manganese for controlled carbon specs.",
-    img: "/products/mc-ferro-manganese.jpg",
+    img: "/products/MediumCarbonFerroManganese.png",
   },
 ];
 
