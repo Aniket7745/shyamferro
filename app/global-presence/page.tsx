@@ -6,7 +6,7 @@
 import { motion } from "framer-motion";
 
 import IndiaMap from "../../components/IndiaMap";
-import ExportByContinent from "../../components/ExportByContinent.tsx";
+import ExportByContinent from "../../components/ExportByContinent";
 
 export default function GlobalPresencePage() {
   const orange = "oklch(0.78 0.19 50)";
