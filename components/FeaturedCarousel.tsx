@@ -35,7 +35,7 @@ const products = [
   },
 ];
 
-export default function FeaturedCarousel({ orange }) {
+export default function FeaturedCarousel({ orange }: { orange: string }) {
   const [page, setPage] = useState(0);
   const pageSize = 3;
   const totalPages = Math.ceil(products.length / pageSize);

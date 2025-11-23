@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import FeaturedCarousel from "../components/FeaturedCarousel.tsx";
+import FeaturedCarousel from "../components/FeaturedCarousel";
 export default function HomePage() {
   const scrollToAbout = () => {
     const section = document.getElementById("about-section");
