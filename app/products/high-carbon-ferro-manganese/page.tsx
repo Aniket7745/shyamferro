@@ -128,7 +128,7 @@ export default function HighCarbonFerroManganesePage() {
             className="relative h-[450px] rounded-xl overflow-hidden border border-gray-300 dark:border-neutral-800 shadow-xl"
           >
             <Image
-              src="/products/hc-ferro-manganese.jpg"
+              src="/products/HighCarbonFerroManganese.png"
               alt="High Carbon Ferro Manganese"
               fill
               className="object-cover"
@@ -166,8 +166,8 @@ export default function HighCarbonFerroManganesePage() {
                   <tr
                     key={i}
                     className={`border-b border-gray-300 dark:border-neutral-700 ${i % 2 === 0
-                        ? "bg-gray-50 dark:bg-neutral-900"
-                        : "bg-white dark:bg-neutral-800"
+                      ? "bg-gray-50 dark:bg-neutral-900"
+                      : "bg-white dark:bg-neutral-800"
                       }`}
                   >
                     <td className="p-4 font-semibold">{row.grade}</td>
